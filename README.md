@@ -7,13 +7,13 @@ vous la trouverez dans le repository : Damdoshi/LibLapin. (n'étant plus diponib
 Il vous suffira alors de renommer le dossier : "liblapin"
 
 Aussi le driver graphique de mon ordinateur n'est probablement pas le même que le votre.
-Veillez à modifier le nom dans le docker file.
-Je l'ai laissé à titre d'exemple
+Veillez à modifier le nom dans le Dockerfile.
+Je l'ai laissé à titre d'exemple.
 (je ferais possiblement une maj avec le driver du hp-elitbook 840)
 
 Vous pouvez maintenant docker build l'image
 
-Je run les images comme suis : 
+Je run les images comme suit : 
 sudo docker run --rm \
        --env DISPLAY="${DISPLAY}" \
        --volume /tmp/.X11-unix:/tmp/.X11-unix \
